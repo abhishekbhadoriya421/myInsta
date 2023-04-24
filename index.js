@@ -1,12 +1,14 @@
 const express = require('express');
 const port = 8000;
+
 const app = express();
 
-app.get('/',require('./routes/index'));
+app.use('/', require('./routes/index'));
 
 app.listen(port,(err)=>{
     if(err){
-        console.log("Error Found",err);
+        console.log('There is an Error',err);
+        return;
     }
-    console.log("Server is running at ",port);
-})
+    console.log('Running at Port: ',port);
+});

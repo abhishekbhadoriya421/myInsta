@@ -1,3 +1,3 @@
-module.exports.home = (req,res)=>{
-    res.send('<h1>This is my home controller</h1>');
+module.exports.home = function(req,res){
+    res.end('<h1>this is home page</h1>');
 };
