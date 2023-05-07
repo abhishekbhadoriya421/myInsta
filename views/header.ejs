@@ -1,1 +1,13 @@
-<header>this is footer</header>
+<header class="mainHeader">
+    <p class="ProjectName"> myInsta</p>
+    <div class="sessionBtn">
+        <% if(locals.user){ %>
+            <a href="/users/signOut">SignOut</a>
+        <%} else {%>
+            <a href="/users/signUp">SignUp</a>
+            <a href="/users/signIn">logIn</a>
+        <% } %>
+    </div>
+</header>
+
+<link rel="stylesheet" href="/css/header.css">

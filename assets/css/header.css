@@ -1,0 +1,38 @@
+.mainHeader {
+  width: 100%;
+  background-color: #2b75ea;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  height: 45px;
+}
+
+.mainHeader .ProjectName {
+  font-size: 1.4rem;
+  color: white;
+}
+
+.mainHeader .sessionBtn {
+  width: 15%;
+  display: flex;
+}
+
+.mainHeader .sessionBtn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 3px;
+  width: 75px;
+  height: 25px;
+  border: 2px solid white;
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: white;
+}
+
+.mainHeader .sessionBtn a:hover {
+  background-color: white;
+  color: #2b75ea;
+}
